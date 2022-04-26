@@ -1,0 +1,14 @@
+install! 'cocoapods', share_schemes_for_development_pods: true, preserve_pod_file_structure: true
+deployment_target = '13.0'
+platform :ios, deployment_target
+use_frameworks!
+
+source 'https://cdn.cocoapods.org/'
+
+target 'ExampleApp' do
+  pod 'FrameworkWithAppSpec', path: '../', inhibit_warnings: false
+  pod 'FrameworkWithAppSpec/Example', path: '../'
+  
+  # only to override source to local path, could be omitted if FrameworkWithResource has valid remote source
+  pod 'FrameworkWithResource', path: '../../FrameworkWithResource'
+end

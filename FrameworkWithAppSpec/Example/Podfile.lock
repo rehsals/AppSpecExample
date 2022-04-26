@@ -1,0 +1,25 @@
+PODS:
+  - FrameworkWithAppSpec (1.0.0):
+    - FrameworkWithResource
+  - FrameworkWithAppSpec/Example (1.0.0):
+    - FrameworkWithResource
+  - FrameworkWithResource (1.121.8)
+
+DEPENDENCIES:
+  - FrameworkWithAppSpec (from `../`)
+  - FrameworkWithAppSpec/Example (from `../`)
+  - FrameworkWithResource (from `../../FrameworkWithResource`)
+
+EXTERNAL SOURCES:
+  FrameworkWithAppSpec:
+    :path: "../"
+  FrameworkWithResource:
+    :path: "../../FrameworkWithResource"
+
+SPEC CHECKSUMS:
+  FrameworkWithAppSpec: 2a75d5189203416fce86c4f8b0941751f526ed73
+  FrameworkWithResource: f9939df3ac97bd3f2d70a5d3e4917553ef3efc4a
+
+PODFILE CHECKSUM: f315772597dcf292bc3efce04b2f9e10691276af
+
+COCOAPODS: 1.11.3
